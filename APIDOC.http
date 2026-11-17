@@ -1,0 +1,50 @@
+#api call for listing actors
+
+###
+GET http://127.0.0.1:8000/actors/
+Accept: application/json
+
+
+#api call for creating actors
+
+###
+POST http://127.0.0.1:8000/actors/
+Content-Type: application/json
+
+{
+    "name":"nayanthara",
+    "age":40,
+    "gender":"female",
+    "movie_name":"hi",
+    "release_year":2026,
+    "rating":8.7
+}
+
+
+#api call for retrieve actors
+
+###
+GET http://127.0.0.1:8000/actors/2/
+Accept: application/json
+
+
+#api call for update actors
+
+###
+PUT http://127.0.0.1:8000/actors/1/
+Content-Type: application/json
+
+{
+    "name": "mohanlal",
+    "age": 69,
+    "gender": "male",
+    "movie_name": "dhrishyam",
+    "release_year": 2026,
+    "rating": 9
+}
+
+#api call for delete actor
+
+###
+DELETE http://127.0.0.1:8000/actors/2/
+Accept: application/json
